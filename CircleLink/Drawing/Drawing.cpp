@@ -275,9 +275,9 @@ void Nhap() {
         }
         if (t == 2)
         {
-            if (S1.isEmpty())
+            if (N==0)
             {
-                cout << "OVERFLOW";
+                cout << "OVERFLOW"<<endl;
             }
             else
             {
