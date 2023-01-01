@@ -8,8 +8,7 @@
 #include <cstdlib>
 using namespace std;
 
-class Node {
-public:
+struct Node {
     int data;
     Node* link;
 
@@ -19,10 +18,9 @@ public:
         this->link = NULL;
     }
 };
-class LinkedList {
+struct LinkedList {
     Node* head;
     Node* tail;
-public:
     LinkedList() {
         head = NULL;
         tail = NULL;
