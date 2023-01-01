@@ -376,7 +376,7 @@ struct SimulationStep
 			drawText(280, 100, "STEP 2: GET THE NEXT RELATION (j;k) FROM INPUT. IF THE INPUT HAS EXHAUSTED, GO TO STEP 4 ", 1);
 			drawText(280, 140, "STEP 3: COUNT[k]++ . SET P <= AVAIL, SUC(P) <- k, NEXT(P) <- TOP[j], TOP[j] <- P", 0);
 			simulation.drawAll(TRUE, TRUE, TRUE, FALSE, FALSE);
-			Sleep(5000);
+			Sleep(2000);
 	
 			system("cls");
 
@@ -393,7 +393,7 @@ struct SimulationStep
 			simulation.drawAll(TRUE, TRUE, TRUE, FALSE, FALSE);
 			simulation.drawActiveCount(K);
 
-			Sleep(5000);
+			Sleep(2000);
 			system("cls");
 
 
@@ -440,7 +440,7 @@ struct SimulationStep
 		drawText(280, 180, "STEP 8: IF N = 0, END OF PROCESS", 0);
 		simulation.drawAll(TRUE, FALSE, TRUE, TRUE, FALSE);
 		F = QLINK[0];
-		Sleep(2000);
+		Sleep(15000);
 		system("cls");
 		while (N != 0) {
 			while (F != 0) {
@@ -454,7 +454,7 @@ struct SimulationStep
 				drawText(280, 180, "STEP 8: IF N = 0, END OF PROCESS", 0);
 				simulation.result[n-N] = F;
 				simulation.drawAll(TRUE, FALSE, TRUE, TRUE, TRUE);
-				Sleep(5000);
+				Sleep(2000);
 				system("cls");
 
 
@@ -480,7 +480,7 @@ struct SimulationStep
 
 					}
 					P = P->NEXT;
-					Sleep(5000);
+					Sleep(2000);
 					system("cls");
 				}
 				drawText(280, 20, "STEP 5: OUPUT F. IF F = 0, GO TO STEP 8, OTHERWISE SET N <- N - 1, P<-TOP[F]  ", 0);

@@ -50,14 +50,11 @@ struct Stack {
     }
     void pop()
     {
-        Node* temp;
-
         if (top == NULL) {
             cout << "\nStack Underflow" << endl;
             exit(1);
         }
         else {
-            temp = top;
             top = top->link;
         }
     }
